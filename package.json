@@ -1,0 +1,66 @@
+{
+  "name": "webeleon-next-starter",
+  "author": "@erikdstock",
+  "contributors": [
+    {
+      "name": "julien prugne",
+      "email": "julien@webeleon.dev"
+    },
+    {
+      "name": "@erikdstock"
+    }
+  ],
+  "license": "MIT",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext ts --ext tsx --ext js --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:all": "yarn lint && yarn type-check && yarn test",
+    "test:coverage": "jest --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "npm run lint",
+      "npm run format"
+    ]
+  },
+  "dependencies": {
+    "@sendgrid/mail": "7.4.2",
+    "next": "latest",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "sass": "1.32.8",
+    "validator": "13.5.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "10.4.9",
+    "@types/jest": "25.2.3",
+    "@types/node": "13.13.45",
+    "@types/react": "16.14.4",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
+    "@typescript-eslint/parser": "2.34.0",
+    "babel-jest": "25.5.1",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-react": "7.22.0",
+    "husky": "4.3.8",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "25.5.4",
+    "jest-watch-typeahead": "0.5.0",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "typescript": "3.9.9"
+  }
+}
