@@ -19,7 +19,7 @@ jobs:
       - name: test
         run: |
           npm run lint
-          npm run test-all
+          npm run test:all
           npm run test:coverag
 
       - name: Coveralls
