@@ -42,7 +42,7 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "sass": "1.32.11",
-    "validator": "13.5.2"
+    "validator": "13.6.0"
   },
   "devDependencies": {
     "@testing-library/react": "10.4.9",
