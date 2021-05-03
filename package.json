@@ -41,7 +41,7 @@
     "next": "latest",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "sass": "1.32.11",
+    "sass": "1.32.12",
     "validator": "13.6.0"
   },
   "devDependencies": {
