@@ -22,13 +22,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:all": "yarn lint && yarn type-check && yarn test",
-    "test:coverage": "jest --coverage"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run type-check"
-    }
+    "test:coverage": "jest --coverage",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
