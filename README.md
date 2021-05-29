@@ -4,4 +4,4 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 ![Test and coverage](https://github.com/webeleon/Next-JS-starter-project/workflows/Test%20and%20coverage/badge.svg)
 
-Based on `with-typescript-eslint-jest with-typescript-eslint-jest-app` template 
+Based on `with-typescript-eslint-jest with-typescript-eslint-jest-app` template
